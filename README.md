@@ -1,6 +1,6 @@
 # BPFDoor Scanner - Check for Compromised Hosts
 
-The BPFDoor malware, as discussed on [Kevin Beaumont's blog](https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896) and on [Twitter](https://twitter.com/GossiTheDog/status/1522964028284411907), is a sophisticatedly simple backdoor being attributed to a Chinese threat actor Red Menshen. The backdoor makes use of Berkley Packet Filters (BPF), hence the name.  This allows the malware to listen on all active ports on an infected host, and if the correct "magic packet" and password are sent, it will respond with a privileged shell. You can learn more about BPFDoor from [our blog](###) and [threat snapshots](###)
+The BPFDoor malware, as discussed on [Kevin Beaumont's blog](https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896) and on [Twitter](https://twitter.com/GossiTheDog/status/1522964028284411907), is a sophisticatedly simple backdoor being attributed to a Chinese threat actor Red Menshen. The backdoor makes use of Berkley Packet Filters (BPF), hence the name.  This allows the malware to listen on all active ports on an infected host, and if the correct "magic packet" and password are sent, it will respond with a privileged shell. You can learn more about BPFDoor from [our blog](https://blog.snapattack.com) and [threat snapshots](https://youtu.be/BThiTaa7t4w)
 
 ## Installation and Usage
 

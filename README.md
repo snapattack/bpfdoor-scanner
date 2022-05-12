@@ -26,13 +26,16 @@ optional arguments:
 
 Examples:
 
-// This will scan the "top 20" ports for a single host, 10.0.75.88, and return responses back to 10.101.72.100 on UDP port 8000
+// This will scan the "top 20" ports for a single host, 10.0.75.88, 
+// and return responses back to 10.101.72.100 on UDP port 8000
 python3 bpfdoor_scanner 10.0.75.88 -1 10.101.72.100 -p 8000
 
-// This will scan SSH/HTTP/HTTPS ports for a single host, 10.0.75.88, and return responses back to 10.101.72.100 on UDP port 8000
+// This will scan SSH/HTTP/HTTPS ports for a single host, 10.0.75.88, 
+// and return responses back to 10.101.72.100 on UDP port 8000
 python3 bpfdoor_scanner 10.0.75.88 -p 22,80,443 -1 10.101.72.100 -p 8000
 
-// This will scan the first 1000 ports for entire 10.0.0.0/8 subnet and return responses back to 10.101.72.100 on UDP port 1337
+// This will scan the first 1000 ports for entire 10.0.0.0/8 subnet
+// and return responses back to 10.101.72.100 on UDP port 1337
 python3 bpfdoor_scanner 10.0.0.0/8 -p 1-1000 -1 10.101.72.100 -p 1337
 
 ```
@@ -45,6 +48,7 @@ Snippets below are from the source code originally found on [pastebin](https://p
 
 ```
     // void packet_loop()
+    
     cmp = logon(mp->pass);
     switch(cmp) {
             case 1:
@@ -64,6 +68,7 @@ Snippets below are from the source code originally found on [pastebin](https://p
 
 ```
     // int mon(in_addr_t ip, unsigned short port)
+
     if ((s_len = sendto(sock, "1", 1, 0, (struct sockaddr *)&remote, sizeof(struct sockaddr))) < 0) {
             close(sock);
             return -1;
